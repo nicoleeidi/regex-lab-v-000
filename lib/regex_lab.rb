@@ -1,5 +1,5 @@
 def starts_with_a_vowel?(word)
-  if word.match(/\b[aeiou]/) == nil
+  if word.match(/\b[aeiouAEIOU]/) == nil
     return false
   else
     return true
@@ -23,7 +23,6 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  #phone.match(/[0-9]{10}|(\d+)-(\d+)-(\d+)/)
   #phone.match(/[\d)(-\s]{10,15}/)
   phone.match(/[0-9]{10}/)
 end
